@@ -1,4 +1,11 @@
 <?php
+session_start();
+if(!isset($_SESSION['id']))
+{
+    header("Location:login.php");
+}
+?>
+<?php
 include_once 'config.php';
 $result = mysqli_query($conn,"SELECT * FROM public_bov_table");
 ?>
@@ -18,7 +25,7 @@ $result = mysqli_query($conn,"SELECT * FROM public_bov_table");
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+</head>
   <body>
     <div class="container">
       <div class="row">
