@@ -25975,7 +25975,7 @@ background: #797368bf;
     color: red;
   }
   .login-box {
-    margin-top: 40px;
+    margin-top: 40px !important;
     height: auto;
     background: #fff;
     text-align: center;
